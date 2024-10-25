@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to PDF Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="background-color: rgba(227, 20, 20, 0.088); " class="container">
+        <h1 style="background-color: rgba(1, 10, 9, 0);">Image to PDF Converter</h1>
+
+        <input type="file" id="imageInput" class="file-input" accept="image/*" multiple>
+        <button onclick="convertToPDF()">Convert to PDF</button>
+        <div id="preview"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
